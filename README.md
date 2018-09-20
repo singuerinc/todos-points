@@ -1,6 +1,6 @@
-# Todos!
+# To-do's points
 
-TBD
+To-do's points is a simple dashboard to keep track of points achieved by doing tasks.
 
 ## Why
 
@@ -16,4 +16,4 @@ TBD
 
 ## Screenshots
 
-TBD
+![](./screenshots/screenshot-1.png)

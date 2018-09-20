@@ -11,7 +11,7 @@ interface IProps {
 
 const UserProfile = ({ user }: IProps) => (
   <Wrapper>
-    <Avatar />
+    <Avatar src={user.avatar} />
     <UserName name={user.name} />
     <WrapperPoints>
       <Points when="today" prefix="+" points={user.points.today} />

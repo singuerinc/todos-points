@@ -11,10 +11,10 @@ const UserName = ({ name }: IProps) => <StyledUserName>{name}</StyledUserName>;
 const StyledUserName = styled.h1`
   margin: 0.5rem 0;
   padding: 0.5rem 0;
+  font-family: Lora;
   font-size: 3rem;
   font-weight: 600;
   color: ${OpenColor.white};
-  text-transform: uppercase;
 `;
 
 export { UserName };

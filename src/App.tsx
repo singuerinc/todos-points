@@ -13,7 +13,8 @@ const users: IUserObj[] = [
   {
     theme: OpenColor.cyan,
     user: {
-      name: "Name 1",
+      avatar: "https://api.adorable.io/avatars/128/5.png",
+      name: "Noemí",
       points: {
         today: 15,
         week: 50
@@ -23,7 +24,8 @@ const users: IUserObj[] = [
   {
     theme: OpenColor.orange,
     user: {
-      name: "Name 2",
+      avatar: "https://api.adorable.io/avatars/128/8.png",
+      name: "Nahuel",
       points: {
         today: 10,
         week: 30
@@ -33,7 +35,8 @@ const users: IUserObj[] = [
   {
     theme: OpenColor.lime,
     user: {
-      name: "Name 2",
+      avatar: "https://api.adorable.io/avatars/128/7.png",
+      name: "Hugo",
       points: {
         today: 10,
         week: 30
@@ -43,7 +46,8 @@ const users: IUserObj[] = [
   {
     theme: OpenColor.yellow,
     user: {
-      name: "Name 2",
+      avatar: "https://api.adorable.io/avatars/128/4.png",
+      name: "Luca",
       points: {
         today: 10,
         week: 30

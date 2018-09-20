@@ -30,6 +30,7 @@ const Wrapper = styled.div`
 
 const When = styled.div`
   font-size: 1.5rem;
+  font-family: Lora;
 `;
 
 const Numbers = styled.div`
