@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { IUser } from "../core/IUser";
+import { Todos } from "./todos/Todos";
 import { UserProfile } from "./UserProfile";
 
 interface IProps {
@@ -10,7 +11,8 @@ interface IProps {
 
 const Card = ({ theme, user }: IProps) => (
   <StyledCard theme={theme}>
-    <UserProfile user={user} />
+    <UserProfile theme={theme} user={user} />
+    <Todos theme={theme} todos={user.todos} />
   </StyledCard>
 );
 

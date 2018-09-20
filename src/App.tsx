@@ -18,7 +18,14 @@ const users: IUserObj[] = [
       points: {
         today: 15,
         week: 50
-      }
+      },
+      todos: [
+        { date: new Date(), done: false, points: 5, title: "Todo 1" },
+        { date: new Date(), done: false, points: 15, title: "Todo 2" },
+        { date: new Date(), done: false, points: 10, title: "Todo 3" },
+        { date: new Date(), done: false, points: 3, title: "Todo 4" },
+        { date: new Date(), done: false, points: 2, title: "Todo 5" }
+      ]
     }
   },
   {
@@ -29,7 +36,14 @@ const users: IUserObj[] = [
       points: {
         today: 10,
         week: 30
-      }
+      },
+      todos: [
+        { date: new Date(), done: false, points: 5, title: "Todo 1" },
+        { date: new Date(), done: false, points: 15, title: "Todo 2" },
+        { date: new Date(), done: false, points: 10, title: "Todo 3" },
+        { date: new Date(), done: false, points: 3, title: "Todo 4" },
+        { date: new Date(), done: false, points: 2, title: "Todo 5" }
+      ]
     }
   },
   {
@@ -40,7 +54,14 @@ const users: IUserObj[] = [
       points: {
         today: 10,
         week: 30
-      }
+      },
+      todos: [
+        { date: new Date(), done: false, points: 5, title: "Todo 1" },
+        { date: new Date(), done: false, points: 15, title: "Todo 2" },
+        { date: new Date(), done: false, points: 10, title: "Todo 3" },
+        { date: new Date(), done: false, points: 3, title: "Todo 4" },
+        { date: new Date(), done: false, points: 2, title: "Todo 5" }
+      ]
     }
   },
   {
@@ -51,7 +72,14 @@ const users: IUserObj[] = [
       points: {
         today: 10,
         week: 30
-      }
+      },
+      todos: [
+        { date: new Date(), done: false, points: 5, title: "Todo 1" },
+        { date: new Date(), done: false, points: 15, title: "Todo 2" },
+        { date: new Date(), done: false, points: 10, title: "Todo 3" },
+        { date: new Date(), done: false, points: 3, title: "Todo 4" },
+        { date: new Date(), done: false, points: 2, title: "Todo 5" }
+      ]
     }
   }
 ];

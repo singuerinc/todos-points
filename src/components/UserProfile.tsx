@@ -7,15 +7,21 @@ import { UserName } from "./user/UserName";
 
 interface IProps {
   user: IUser;
+  theme: string[];
 }
 
-const UserProfile = ({ user }: IProps) => (
+const UserProfile = ({ user, theme }: IProps) => (
   <Wrapper>
     <Avatar src={user.avatar} />
     <UserName name={user.name} />
     <WrapperPoints>
-      <Points when="today" prefix="+" points={user.points.today} />
-      <Points when="week" prefix="" points={user.points.week} />
+      <Points
+        theme={theme}
+        when="today"
+        prefix="+"
+        points={user.points.today}
+      />
+      <Points theme={theme} when="week" prefix="" points={user.points.week} />
     </WrapperPoints>
   </Wrapper>
 );

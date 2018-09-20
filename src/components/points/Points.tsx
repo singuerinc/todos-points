@@ -3,14 +3,15 @@ import styled from "styled-components";
 
 interface IProps {
   points: number;
+  theme: string[];
   prefix: string;
   when: string;
 }
 
-const Points = ({ when, prefix, points }: IProps) => (
+const Points = ({ when, prefix, theme, points }: IProps) => (
   <Wrapper>
     <When>{when}</When>
-    <Numbers>
+    <Numbers theme={theme}>
       {prefix}
       {points}
     </Numbers>
@@ -33,9 +34,10 @@ const When = styled.div`
   font-family: Lora;
 `;
 
-const Numbers = styled.div`
+const Numbers = styled.div<{ theme: string[] }>`
   font-size: 4rem;
   font-weight: 600;
+  color: ${props => props.theme[2]};
 `;
 
 export { Points };

@@ -1,3 +1,5 @@
+import { ITodo } from "./ITodo";
+
 interface IUser {
   name: string;
   avatar: string;
@@ -5,6 +7,7 @@ interface IUser {
     today: number;
     week: number;
   };
+  todos: ITodo[];
 }
 
 export { IUser };
