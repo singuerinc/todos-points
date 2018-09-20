@@ -11,12 +11,44 @@ interface IUserObj {
 
 const users: IUserObj[] = [
   {
-    theme: OpenColor.green,
-    user: { name: "Name" }
+    theme: OpenColor.cyan,
+    user: {
+      name: "Name 1",
+      points: {
+        today: 15,
+        week: 50
+      }
+    }
   },
   {
     theme: OpenColor.orange,
-    user: { name: "Name" }
+    user: {
+      name: "Name 2",
+      points: {
+        today: 10,
+        week: 30
+      }
+    }
+  },
+  {
+    theme: OpenColor.lime,
+    user: {
+      name: "Name 2",
+      points: {
+        today: 10,
+        week: 30
+      }
+    }
+  },
+  {
+    theme: OpenColor.yellow,
+    user: {
+      name: "Name 2",
+      points: {
+        today: 10,
+        week: 30
+      }
+    }
   }
 ];
 

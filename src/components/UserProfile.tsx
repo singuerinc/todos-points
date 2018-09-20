@@ -14,8 +14,8 @@ const UserProfile = ({ user }: IProps) => (
     <Avatar />
     <UserName name={user.name} />
     <WrapperPoints>
-      <Points when="today" prefix="+" points={15} />
-      <Points when="week" prefix="" points={50} />
+      <Points when="today" prefix="+" points={user.points.today} />
+      <Points when="week" prefix="" points={user.points.week} />
     </WrapperPoints>
   </Wrapper>
 );
