@@ -1,35 +1,28 @@
-import * as OpenColor from "open-color";
 import * as React from "react";
 import styled from "styled-components";
 import { IUser } from "../core/IUser";
 import { UserProfile } from "./UserProfile";
 
-interface IState {
+interface IProps {
   user: IUser;
+  theme: string[];
 }
 
-class Card extends React.Component {
-  public state = {
-    user: {
-      name: "Name"
-    }
-  };
+const Card = ({ theme, user }: IProps) => (
+  <StyledCard theme={theme}>
+    <UserProfile user={user} />
+  </StyledCard>
+);
 
-  public render() {
-    const { user } = this.state;
-    return (
-      <StyledCard>
-        <UserProfile user={user} />
-      </StyledCard>
-    );
-  }
+interface IStyledCard {
+  theme: string[];
 }
 
-const StyledCard = styled.div`
+const StyledCard = styled.div<IStyledCard>`
   flex: 1 1 auto;
-  border: 4px solid ${OpenColor.violet[6]};
-  background-color: ${OpenColor.violet[9]};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 4px solid ${props => props.theme[6]};
+  background-color: ${props => props.theme[9]};
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
   border-radius: 1.5rem;
   margin: 1rem;
   display: flex;
