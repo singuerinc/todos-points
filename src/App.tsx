@@ -1,12 +1,13 @@
-import * as OpenColor from "open-color";
+import OpenColor from "open-color";
 import * as React from "react";
-import styled, { injectGlobal } from "styled-components";
+import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import { Card } from "./components/Card";
 import { IUser } from "./core/IUser";
 
 interface IUserObj {
   user: IUser;
-  theme: OpenColor.color;
+  theme: string[];
 }
 
 const users: IUserObj[] = [
@@ -85,14 +86,17 @@ const users: IUserObj[] = [
 ];
 
 const App = () => (
-  <Wrapper>
-    {users.map(u => (
-      <Card user={u.user} theme={u.theme} />
-    ))}
-  </Wrapper>
+  <>
+    <GlobalStyle />
+    <Wrapper>
+      {users.map(u => (
+        <Card user={u.user} theme={u.theme} />
+      ))}
+    </Wrapper>
+  </>
 );
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${OpenColor.violet[9]};
   }
